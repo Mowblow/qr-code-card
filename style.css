@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'Outfit-bold';
+    src: url(./Outfit/static/Outfit-Bold.ttf);
+}
+@font-face {
+  font-family:'Outfit-regular';
+  src: url(./Outfit/static/Outfit-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+}
+
+body {
+  background: black;
+  /* font-family: 'Outfit'; */
+}
+
+html {
+  font-size: 15px;
+}
+
+.container {
+  background: hsl(212, 45%, 89%);
+  width: 350px;
+  height: 667px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 12.5px;
+}
+
+.main-card {
+  background: hsl(0, 0%, 100%);
+  margin: 0 auto;
+  width: 300px;
+  padding: 12.5px;
+  border-radius: 20px;
+  box-shadow: -4px -6px 8px rgba(0, 0, 0, 0.2), 4px 6px 8px rgba(0, 0, 0, .1);
+  /* border: 1px solid black; */
+}
+
+img {
+  width: 275px;
+  border-radius: 10px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.text {
+  text-align: center;
+  padding: 20px;
+}
+
+.text  h2{
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  font-family: 'Outfit-bold';
+  color: hsl(218, 44%, 22%);
+}
+
+.text p {
+  font-size: 1rem;
+  font-family: 'Outfit-regular';
+  color:  hsl(220, 15%, 55%);
+}
+
+@media screen and (min-width: 768px) {
+  .container{
+    width: 1440px;
+  }
+}
